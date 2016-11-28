@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AnroidOneLess6</string>
+    <string name="logo">Logo</string>
+    <string name="name_salon">nameSalon</string>
 </resources>
