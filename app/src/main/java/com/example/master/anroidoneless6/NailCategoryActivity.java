@@ -34,4 +34,3 @@ public class NailCategoryActivity extends ListActivity {
         startActivity(intent);
     }
 }
-

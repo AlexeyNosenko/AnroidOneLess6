@@ -1,6 +1,5 @@
 package com.example.master.anroidoneless6;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -39,5 +38,6 @@ public class NailActivity extends AppCompatActivity {
             TextView descriptionNail = (TextView) findViewById(R.id.descriptionNail);
             descriptionNail.setText(nail.getDescription());
         }
+        Log.d("onCreate", "End");
     }
 }
