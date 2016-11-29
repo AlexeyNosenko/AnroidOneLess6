@@ -16,12 +16,14 @@
         <activity android:name=".TopActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".NailActivity"/>
         <activity android:name=".NailCategoryActivity"/>
+        <activity android:name=".HairActivity"/>
+        <activity android:name=".HairCategoryActivity"/>
     </application>
 
 </manifest>
