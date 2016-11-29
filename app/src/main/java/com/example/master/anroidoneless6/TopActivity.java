@@ -3,6 +3,7 @@ package com.example.master.anroidoneless6;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,10 +29,13 @@ public class TopActivity extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
+        Log.d("onClick", "TopActivity");
         switch (v.getId()){
             case R.id.ivNails:
             case R.id.tvNails:
+                Log.d("onClick", "Nails");
                 Intent intent = new Intent(this, NailCategoryActivity.class);
+                Log.d("onClick", "intent");
                 startActivity(intent);
                 break;
         }

@@ -11,12 +11,11 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.master.anroidoneless6.TopActivity">
 
-    <GridView
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2">
-
-
+        android:columnCount="2"
+        tools:targetApi="ice_cream_sandwich">
 
         <ImageView
             android:id="@+id/ivNails"
@@ -30,15 +29,15 @@
 
         <TextView
             android:id="@+id/tvNails"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_column="1"
-            android:layout_gravity="fill_vertical"
+            android:layout_gravity="fill_vertical|fill_horizontal"
             android:layout_row="0"
             android:background="@color/colorBackGround"
             android:gravity="center_vertical"
             android:text="@string/name_salon"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/colorNameSalon" />
-    </GridView>
+    </GridLayout>
 </ScrollView>
