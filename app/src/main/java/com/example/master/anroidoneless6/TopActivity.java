@@ -11,7 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TopActivity extends AppCompatActivity implements View.OnClickListener {
-
+// открытие карты
+// настройка цвета в категориях
+// подобрать инфы
+// подогнать размер TextView
     private ImageView ivLogo = null;
 
     private TextView  tvNails = null;
@@ -23,7 +26,7 @@ public class TopActivity extends AppCompatActivity implements View.OnClickListen
     private TextView  tvMap   = null;
     private ImageView ivMap   = null;
 
-    private final String officialSite = "студия-мираж.рф"; // сайт не мой)
+    private final String officialSite = "http://www.студия-мираж.рф"; // сайт не мой)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

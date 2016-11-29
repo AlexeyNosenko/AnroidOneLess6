@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBackGround">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,24 +11,19 @@
         <ImageView
             android:id="@+id/photoHair"
             android:layout_width="300dp"
-            android:layout_height="380dp"
-            android:background="@color/colorBackGround"/>
+            android:layout_height="380dp"/>
 
         <TextView
             android:id="@+id/nameHair"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/colorText"
-            android:background="@color/colorBackGround"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
 
         <TextView
             android:id="@+id/descriptionHair"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorText"
-            android:background="@color/colorBackGround"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
     </LinearLayout>
 
 </ScrollView>

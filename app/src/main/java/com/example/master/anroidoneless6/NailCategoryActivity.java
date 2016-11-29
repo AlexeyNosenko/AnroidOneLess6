@@ -18,6 +18,7 @@ public class NailCategoryActivity extends ListActivity {
         Log.d("onCreate", "NailCategoryActivity");
         super.onCreate(savedInstanceState);
         ListView listView = getListView();
+//        listView.setBackgroundColor(getResources().getColor(R.color.colorBackGround));
         ArrayAdapter<Nail> nailsAdapter = new ArrayAdapter<Nail>(this, android.R.layout.simple_list_item_1, Nail.nails);
         listView.setAdapter(nailsAdapter);
     }
@@ -25,10 +26,6 @@ public class NailCategoryActivity extends ListActivity {
     @Override
     protected void onListItemClick(ListView listView, View v, int position, long id){
         Log.d("onListItemClick", "NailCategoryActivity");
-        Log.d("NailCategoryActivity", "listView " + listView);
-        Log.d("NailCategoryActivity", "v " + v);
-        Log.d("NailCategoryActivity", "position " + position);
-        Log.d("NailCategoryActivity", "id " + id);
         Intent intent = new Intent(NailCategoryActivity.this, NailActivity.class);
         intent.putExtra(NailActivity.EXTRA_NAIL, (int) id);
         startActivity(intent);
