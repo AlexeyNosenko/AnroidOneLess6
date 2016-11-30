@@ -11,10 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TopActivity extends AppCompatActivity implements View.OnClickListener {
-// открытие карты
-// настройка цвета в категориях
 // подобрать инфы
-// подогнать размер TextView
     private ImageView ivLogo = null;
 
     private TextView  tvNails = null;
@@ -26,7 +23,7 @@ public class TopActivity extends AppCompatActivity implements View.OnClickListen
     private TextView  tvMap   = null;
     private ImageView ivMap   = null;
 
-    private final String officialSite = "http://www.студия-мираж.рф"; // сайт не мой)
+    private final String officialSite = "http://www.студия-мираж.рф"; // сайт нашел)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +58,12 @@ public class TopActivity extends AppCompatActivity implements View.OnClickListen
         startActivity(intent);
     }
 
+    private void openMap(String geoUriString){
+        Uri geoUri = Uri.parse(geoUriString);
+        Intent intent = new Intent(Intent.ACTION_VIEW, geoUri);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View v) {
         Log.d("onClick", "TopActivity");
@@ -86,7 +89,8 @@ public class TopActivity extends AppCompatActivity implements View.OnClickListen
             case R.id.ivMap:
             case R.id.tvMap:
                 Log.d("onClick", "Map");
-                //intent = new Intent(this, "asdasdasd");
+                final String geoUriString = "geo:53.198022,50.177723?z=17";
+                openMap(geoUriString);
                 break;
         }
 

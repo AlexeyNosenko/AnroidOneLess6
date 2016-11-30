@@ -18,7 +18,6 @@ public class NailCategoryActivity extends ListActivity {
         Log.d("onCreate", "NailCategoryActivity");
         super.onCreate(savedInstanceState);
         ListView listView = getListView();
-//        listView.setBackgroundColor(getResources().getColor(R.color.colorBackGround));
         ArrayAdapter<Nail> nailsAdapter = new ArrayAdapter<Nail>(this, android.R.layout.simple_list_item_1, Nail.nails);
         listView.setAdapter(nailsAdapter);
     }

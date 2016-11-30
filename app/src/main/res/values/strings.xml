@@ -4,8 +4,8 @@
     <string name="description_img_nails">Nails</string>
     <string name="description_img_hairs">Hairs</string>
     <string name="description_img_map">Map</string>
-    <string name="category_nails">Nails</string>
-    <string name="category_hairs">Hairs</string>
-    <string name="category_map">Map</string>
+    <string name="category_nails">Ногти</string>
+    <string name="category_hairs">Волосы</string>
+    <string name="category_map">Расположение</string>
     <string name="name_salon">nameSalon</string>
 </resources>

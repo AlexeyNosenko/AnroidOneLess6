@@ -31,5 +31,6 @@ public class HairActivity extends AppCompatActivity {
 
         TextView descriptionHair = (TextView) findViewById(R.id.descriptionHair);
         descriptionHair.setText(h.getDescription());
+        Log.d("HairActivity", "onCreateEnd");
     }
 }

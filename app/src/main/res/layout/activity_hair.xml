@@ -10,13 +10,14 @@
 
         <ImageView
             android:id="@+id/photoHair"
-            android:layout_width="300dp"
-            android:layout_height="380dp"/>
+            android:layout_width="@dimen/size_image_detail_heigth"
+            android:layout_height="@dimen/size_image_detail_width"/>
 
         <TextView
             android:id="@+id/nameHair"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
 
         <TextView
